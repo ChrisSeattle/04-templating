@@ -38,7 +38,7 @@ Article.prototype.toHtml = function() {
 };
 
 // COMMENT: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
-// If we have a single input for an arrow function, then the parentheses are optional (and typically not used). However, for the mentioned method, we want to pass two inputs, so we need to have them comma seperated and surrounded by paranthesis so it is clear they are both parameters for our arrow function. 
+// If we have a single input for an arrow function, then the parentheses are optional (and typically not used). However, for the mentioned method, we want to pass two inputs, so we need to have the parameters comma seperated and surrounded by paranthesis so it is clear they are both parameters for our arrow function. 
 rawData.sort((a,b) => {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
